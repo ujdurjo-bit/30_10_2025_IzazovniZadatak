@@ -47,6 +47,7 @@ public class Main {
             if (brojNovcanica > 0) {
                 System.out.println(brojNovcanica + " novčanice od " + trenutnaVrj + " €");
                 drIznos = drIznos - (brojNovcanica * trenutnaVrj);
+                drIznos = Math.round(drIznos * 100.0) / 100.0;
             }
         }
 
@@ -61,7 +62,7 @@ public class Main {
             if (brojKovanica > 0) {
                 System.out.println(brojKovanica + " kovanicu od " + trenutnaVrjKO + " €");
                 drIznos = drIznos-  (brojKovanica * trenutnaVrjKO);
-
+                drIznos = Math.round(drIznos * 100.0) / 100.0;
             }
         }
 
