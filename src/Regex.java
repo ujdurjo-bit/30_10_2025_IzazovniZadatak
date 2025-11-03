@@ -12,7 +12,7 @@ public class Regex {
         String text = sc.nextLine();
 
        // String text = "Danas je    novi aa daaan";
-        String[] characters = text.split("\\s");
+        String[] characters = text.split("\\s+");
 //        String[] characters = text.split("[\\s]");
 
         for (int i = characters.length - 1; i >= 0; i--) {
